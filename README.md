@@ -51,6 +51,16 @@ Copy
 Edit
 streamlit run streamlit_app/app.py
 
+## 📁 Set Model Path (IMPORTANT)
+bash
+Copy
+Edit
+# In Bash
+export LLM_PATH="C:/Models/deepseek.gguf"
+
+# OR in PowerShell
+$env:LLM_PATH = "C:\Models\deepseek.gguf"
+
 ## ✨ Features
 ✅ Voice-to-voice interaction using Whisper + pyttsx3
 
