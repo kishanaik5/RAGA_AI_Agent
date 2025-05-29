@@ -27,20 +27,39 @@ This is a fully offline, voice-enabled multi-agent finance assistant built for t
 
 ---
 
-## 📦 Project Structure
-RAGA_ai_Assignment/
-├── agents/
-│ ├── analysis_agent.py
-│ ├── language_agent.py
-│ ├── retriever_agent.py
-│ ├── voice_agent.py
-├── data_ingestion/
-│ ├── api_agent.py
-│ ├── scraper_agent.py
-├── orchestrator/
-│ └── main.py
+## 📥 Download Required Models
+DeepSeek R1 GGUF: Place your .gguf model file in a known path (e.g., C:/Models/deepseek.gguf)
+
+(Optional) BGE model: Already handled by sentence-transformers — downloads automatically
 ├── streamlit_app/
 │ └── app.py
 ├── requirements.txt
 ├── Dockerfile
 ├── README.md
+
+## ▶️ Running the App
+1. Start the backend (FastAPI)
+bash
+Copy
+Edit
+python -m orchestrator.main
+Then open: http://localhost:8000/docs
+
+2. Start the frontend (Streamlit)
+bash
+Copy
+Edit
+streamlit run streamlit_app/app.py
+
+## ✨ Features
+✅ Voice-to-voice interaction using Whisper + pyttsx3
+
+✅ LLM-powered summary generation using DeepSeek (offline)
+
+✅ Fast vector retrieval using BGE + FAISS
+
+✅ Clean microservice architecture (FastAPI + Streamlit)
+
+## 📜 License
+This project is open-source, created for submission to the RAGA AI internship assignment.
+
