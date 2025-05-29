@@ -28,4 +28,19 @@ This is a fully offline, voice-enabled multi-agent finance assistant built for t
 ---
 
 ## 📦 Project Structure
-
+RAGA_ai_Assignment/
+├── agents/
+│ ├── analysis_agent.py
+│ ├── language_agent.py
+│ ├── retriever_agent.py
+│ ├── voice_agent.py
+├── data_ingestion/
+│ ├── api_agent.py
+│ ├── scraper_agent.py
+├── orchestrator/
+│ └── main.py
+├── streamlit_app/
+│ └── app.py
+├── requirements.txt
+├── Dockerfile
+├── README.md
