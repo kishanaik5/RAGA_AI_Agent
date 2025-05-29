@@ -1,0 +1,27 @@
+# Core model runners
+llama-cpp-python
+sentence-transformers
+faiss-cpu
+transformers
+torch
+scipy
+numpy
+
+# Voice agents
+pyttsx3
+sounddevice
+openai-whisper
+ffmpeg-python
+
+# Data fetching
+yfinance
+requests
+beautifulsoup4
+
+# Backend
+fastapi
+uvicorn
+python-multipart
+
+# Frontend
+streamlit
