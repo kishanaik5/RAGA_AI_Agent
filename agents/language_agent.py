@@ -2,7 +2,12 @@
 
 from llama_cpp import Llama
 import os
-model_path = os.getenv("LLM_PATH", "models/deepseek.gguf")  # fallback path
+
+# Update this path to your actual model location if needed
+model_path = os.getenv(
+    "LLM_PATH",
+    r"C:\Users\kisha\.lmstudio\models\lmstudio-community\DeepSeek-R1-Distill-Qwen-7B-GGUF\DeepSeek-R1-Distill-Qwen-7B-Q4_K_M.gguf"
+)
 llm = Llama(model_path=model_path, n_ctx=1024)
 
 def format_prompt(exposure_pct, earnings_surprises, regional_sentiment):
