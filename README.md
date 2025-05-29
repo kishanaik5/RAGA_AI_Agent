@@ -18,5 +18,14 @@ This is a fully offline, voice-enabled multi-agent finance assistant built for t
 
 | Agent         | Description |
 |---------------|-------------|
-| **API Agent**      | Fetches live stock data usin
+| **API Agent**      | Fetches live stock data using `yfinance` |
+| **Scraper Agent**  | Pulls headlines/earnings news from Yahoo Finance |
+| **Retriever Agent**| Embeds and retrieves documents using **BGE Large + FAISS** |
+| **Analysis Agent** | Computes AUM exposure and surprise scores |
+| **Language Agent** | Uses **DeepSeek R1 (GGUF)** via `llama-cpp` for summary |
+| **Voice Agent**    | Uses **Whisper** for STT and **pyttsx3** for TTS |
+
+---
+
+## 📦 Project Structure
 
